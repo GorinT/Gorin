@@ -1,0 +1,71 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	/*
+	const int size = 1000;
+	int n,arr[size];
+	bool checked[size];
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+		checked[i]=false;
+	}
+	for(int i=0;i<n;i++)
+	{
+		if(checked[i])
+			continue;
+		int counter=1;
+		for(int j=i+1;j<n;j++)
+		{
+			if(!checked[j] && arr[j]==arr[i])
+			{
+				counter++;
+				checked[j]=true;
+			}
+		}
+		checked[i]=true;
+		cout<<arr[i]<<": "<<counter<<endl;
+	}
+	*/
+
+	const int size=100;
+	int arr[size][size],arr1[size][size];
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			cout<<"Vuvedi element ["<<i<<"] Kolona ["<<j<<"]: ";
+			cin>>arr[i][j];
+		}
+	}
+	
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			arr1[j][i]=arr[i][j];
+		}
+	}
+	cout<<"Matrica 1"<<endl;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			cout<<arr[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+	cout<<"Matrica2: "<<endl;
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			cout<<arr1[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+}
