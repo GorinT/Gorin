@@ -1,7 +1,18 @@
 #include<iostream>
 using namespace std;
+int abs(int a);
 int main()
 {
+
+    class dummy
+    {
+    public:
+         static void a() { printf("I'm in a!\n"); }
+    };
+
+    dummy::a();
+    dummy::a();
+
 	/*
 	const int size = 1000;
 	int n,arr[size];
@@ -28,8 +39,8 @@ int main()
 		checked[i]=true;
 		cout<<arr[i]<<": "<<counter<<endl;
 	}
-	*/
 
+ZAD2
 	const int size=100;
 	int arr[size][size],arr1[size][size];
 	int n;
@@ -68,4 +79,12 @@ int main()
 		}
 		cout<<endl;
 	}
-}
+	*/
+	
+}/*
+int abs(int a)
+{
+	if(a<0)
+		return -a;
+	return a;
+}*/
